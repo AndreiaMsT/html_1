@@ -32,80 +32,82 @@
               placeholder="exemple@gmail.com"
             />
           </fieldset>
+          <fieldset>
+            <legend>About your abduction</legend>
 
-          <h2>About your abduction</h2>
+            <label for="date">Requested date</label>
+            <input type="date" id="date" name="date" /> <br />
 
-          <label for="date">Requested date</label>
-          <input type="date" id="date" name="date" /> <br />
+            <label for="peopleabducted"
+              >How many people would you like abducted? (between 1 and
+              10)</label
+            >
+            <input
+              type="number"
+              id="peopleabducted"
+              name="peopleabducted"
+              min="1"
+              max="10"
+            />
 
-          <label for="peopleabducted"
-            >How many people would you like abducted? (between 1 and 10)</label
-          >
-          <input
-            type="number"
-            id="peopleabducted"
-            name="peopleabducted"
-            min="1"
-            max="10"
-          />
+            <p>What type of UFO do you prefer?</p>
+            <input type="radio" id="classic" name="fav_UFO" value="classic" />
+            <label for="classic">Classic oval UFO</label><br />
+            <input type="radio" id="cruiser" name="fav_UFO" value="cruiser" />
+            <label for="cruiser">Star Wars-style Imperial cruiser</label><br />
+            <input type="radio" id="viper" name="fav_UFO" value="viper" />
+            <label for="viper">Battlestar Galactica-style Viper</label><br />
+            <input type="radio" id="cube" name="fav_UFO" value="cube" />
+            <label for="cube">Borg-style cube</label><br />
 
-          <p>What type of UFO do you prefer?</p>
-          <input type="radio" id="classic" name="fav_UFO" value="classic" />
-          <label for="classic">Classic oval UFO</label><br />
-          <input type="radio" id="cruiser" name="fav_UFO" value="cruiser" />
-          <label for="cruiser">Star Wars-style Imperial cruiser</label><br />
-          <input type="radio" id="viper" name="fav_UFO" value="viper" />
-          <label for="viper">Battlestar Galactica-style Viper</label><br />
-          <input type="radio" id="cube" name="fav_UFO" value="cube" />
-          <label for="cube">Borg-style cube</label><br />
+            <p>What type of abduction experience do you want?</p>
+            <input
+              type="checkbox"
+              id="solar"
+              name="type_experience"
+              value="solar"
+            />
+            <label for="solar">Tour of the solar system</label><br />
+            <input
+              type="checkbox"
+              id="dinner"
+              name="type_experience"
+              value="dinner"
+            />
+            <label for="dinner">Alien dinner and discussion</label><br />
+            <input
+              type="checkbox"
+              id="dance"
+              name="type_experience"
+              value="dance"
+            />
+            <label for="dance">Alien dance lessons</label><br />
+            <input
+              type="checkbox"
+              id="whale"
+              name="type_experience"
+              value="whale"
+            />
+            <label for="whale">Whale watching</label><br />
 
-          <p>What type of abduction experience do you want?</p>
-          <input
-            type="checkbox"
-            id="solar"
-            name="type_experience"
-            value="solar"
-          />
-          <label for="solar">Tour of the solar system</label><br />
-          <input
-            type="checkbox"
-            id="dinner"
-            name="type_experience"
-            value="dinner"
-          />
-          <label for="dinner">Alien dinner and discussion</label><br />
-          <input
-            type="checkbox"
-            id="dance"
-            name="type_experience"
-            value="dance"
-          />
-          <label for="dance">Alien dance lessons</label><br />
-          <input
-            type="checkbox"
-            id="whale"
-            name="type_experience"
-            value="whale"
-          />
-          <label for="whale">Whale watching</label><br />
+            <label for="requests">Special requests:</label>
+            <textarea
+              type="text"
+              id="requests"
+              name="requests"
+              cols="130"
+              rows="10"
+            ></textarea>
+            <br />
 
-          <label for="requests">Special requests:</label>
-          <textarea
-            type="text"
-            id="requests"
-            name="requests"
-            cols="130"
-            rows="10"
-          ></textarea>
-          <br />
-
-          <input
-            type="checkbox"
-            id="add_email"
-            name="add_email"
-            value="add_email"
-          /><label for="add_email">Add me to your email list</label><br />
-          <input type="submit" value="submit" />
+            <input
+              type="checkbox"
+              id="add_email"
+              name="add_email"
+              value="add_email"
+            /><label for="add_email">Add me to your email list</label><br />
+            <input type="submit" value="submit" />
+          </fieldset>
         </form>
       </section>
       <aside>
